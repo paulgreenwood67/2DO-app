@@ -9,9 +9,9 @@ import "./App.css";
 import Todo from "./components/Todo/Todo";
 
 export default function App() {
-  const [render, setRender] = useState(false);
+
   const [data, setData] = useState([]);
-  const [taskData, setTaskData] = useState();
+  const [taskData] = useState();
   const [user, setUser] = useState({
     email: "",
     password: "",
@@ -40,7 +40,7 @@ export default function App() {
     })
       .then((res) => res.json())
       .then((response) => {
-        if (response.data.length == 0) {
+        if (response.data.length === 0) {
           window.alert("User not found, please try again");
         } else {
           window.alert("Login successful");
