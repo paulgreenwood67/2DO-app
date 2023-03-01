@@ -33,7 +33,7 @@ const Todo = (props) => {
       return;
     }
     console.log("submit handler 2");
-    fetch("http://localhost:8080/todo/create", {
+    fetch("https://app-to-do.herokuapp.com/todo/create", {
       method: "PUT",
       headers: {
         Authorization: "Bearer " + authToken,
@@ -70,7 +70,7 @@ const Todo = (props) => {
     console.log(e.target.dataset.todo);
 
     // set Todos
-    fetch("http://localhost:8080/todo/delete", {
+    fetch("https://app-to-do.herokuapp.com/todo/delete", {
       method: "PUT",
       headers: {
         Authorization: "Bearer " + authToken,
