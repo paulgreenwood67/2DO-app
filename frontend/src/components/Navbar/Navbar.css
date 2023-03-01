@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Rammetto+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.main-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(107, 124, 134);
+}
+
+
+.nav-menu {
+  height: 80px;
+  background: rgb(107, 124, 134);
+  align-items: center;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none;
+  font-size: larger;
+  
+}
+
+.nav-links:hover {
+  color:rgb(216, 200, 60);
+  text-decoration: none;
+}
+
+
+.nav-links:active {
+  color:rgb(216, 200, 60);
+  text-decoration: none;
+}
+
+.nav-links:focus {
+  color:rgb(216, 200, 60);
+  text-decoration: none;
+}
+
+
+.nav-item {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 40px;
+  margin-right: 2rem;
+  margin-top: 20px;
+  display: inline-block;
+  margin-top: 2px;
+}
+
+.nav-item:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width 0.7s ease 
+
+}
+
+.nav-item:hover:after {
+  width: 100%;
+  background:rgb(57, 110, 131);
+}
+
+
+
+
+ 
+
+

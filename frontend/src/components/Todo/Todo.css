@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.center{
+  background: white;
+  padding:10px;
+  border-radius: 20px;
+  position: absolute;
+  margin-top: 2px;;
+  left: 50%;
+  transform: translate(-50%);
+
+}
+
+.square{
+  background:rgb(57, 110, 131);
+  padding:30px 50px 50px 50px;
+  border-radius: 20px;
+}
+
+
+.todo-title {
+ 
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding: 0.8rem;
+  user-select: none;
+  color: white;
+  font-family:"Rammetto One", sans-serif;
+  border-radius: 0.5rem;
+  
+}
+
+.todo-input {
+  max-width: 480px;
+  display: block;
+  margin: 0 auto 2rem;
+  font: inherit;
+  padding: 0.6rem 1rem;
+  border:none;
+  border-radius: 0.5rem;
+
+}
+
+.error {
+  padding: 0.8rem;
+  display: block;
+  color: red;
+  margin: -2rem 0 1rem;
+  text-align: center;
+  user-select: none;
+}
+
+.todo-items {
+  list-style: none;
+  padding: 0;
+  user-select: none;
+}
+
+.lists {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem;
+  box-shadow: 0px 0px 2px white;
+  border-radius: 0.3rem;
+}
+.lists:hover {
+  box-shadow: 0px 0px 3px white;
+ 
+}
+
+.todo-name {
+  color: #fff;
+  background: transparent;
+  border: none;
+  padding-right: 1rem;
+  max-width: calc(100% - 42px);
+  width: 100%;
+  word-break: break-word;
+  cursor: pointer;
+}
+
+
+
+
+
+.lists:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+
+.material-symbols-outlined{
+  color: white;
+  font-size: 20pt;
+}

@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
+
+.center{
+  background: white;
+  padding:10px;
+  border-radius: 20px;
+  position: absolute;
+  margin-top: 2px;;
+  left: 50%;
+  transform: translate(-50%);
+
+}
+
+.square{
+  background:rgb(57, 110, 131);
+  padding:40px 50px 50px 50px;
+  border-radius: 20px;
+}
+
+.login-content {
+  margin-bottom: 10px;
+  display: flex;
+
+}
+
+.form-title {
+  color: white;
+  text-align: center;
+  font-family: "Rammetto One", sans-serif;
+}
+
+.register-form {
+  width: 100%;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 25px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.form-group:last-child {
+  margin-bottom: 0px;
+}
+
+.label {
+  margin-left: 5px;
+  position: absolute;
+  left: 10;
+  top: 45%;
+  transform: translateY(-50%);
+  color: #403f3f;;
+}
+
+.input {
+  outline: none;
+  width: 100%;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #999;
+  border-radius: 5px;
+  padding: 6px 30px ;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+
+
+.createAccount {
+  padding:10px;
+  width: 50%;
+  position: absolute;
+  margin-top: 2px;;
+  left: 50%;
+  transform: translate(-50%);
+  
+}
+
+.createAccountText{
+  font-size: 14px;
+  color: white;
+  display: block;
+  text-align: center;
+}
+
+.form-button {
+  text-align: center;
+}
+
+.form-submit {
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin-top: 15px;
+  padding: 10px 25px;
+  background: rgb(216, 200, 60);
+  color: #403f3f;
+  border-radius: 5px;
+  cursor: pointer;
+  width: auto;
+  outline: none;
+  border: none;
+}
+
+.form-submit:hover {
+  background: rgb(185, 168, 21);;
+}
