@@ -20,8 +20,7 @@ export default function Login(props) {
                 <h2 className="form-title">Login</h2>
                 <div className="form-group">
                   <label className="label">
-                    {" "}
-                    <FaEnvelope />{" "}
+                   
                   </label>
                   <input
                     className="input"
@@ -35,7 +34,7 @@ export default function Login(props) {
                 </div>
                 <div className="form-group">
                   <label className="label">
-                    <FaLock />
+                   
                   </label>
                   <input
                     className="input"
