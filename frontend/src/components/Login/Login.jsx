@@ -1,13 +1,12 @@
-import { React, useState } from "react";
+import { React} from "react";
 
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 import "./Login.css";
 
 // function for logins
 export default function Login(props) {
  
-  const history = useNavigate();
-  const [dbData, setDbData] = useState(sessionStorage.getItem("data"));
+
 
 // login form
   return (
@@ -68,4 +67,5 @@ export default function Login(props) {
     </>
   );
 }
+
 
