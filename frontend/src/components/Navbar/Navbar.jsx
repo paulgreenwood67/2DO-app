@@ -7,7 +7,7 @@ import "./Navbar.css";
 const Navbar = () => {
   const [click, setClick] = React.useState(false);
   const handleClick = () => setClick(!click);
-  const Close = () => setClick(false);
+
 
   return (
     <>
