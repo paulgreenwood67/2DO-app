@@ -1,7 +1,7 @@
 //this is the todo page
 
-import { React, useState, useEffect } from "react";
-import { FaTasks, FaEdit, FaTrashAlt, FaCheckCircle } from "react-icons/fa";
+import { React, useState} from "react";
+
 import "./Todo.css";
 
 //add to-dos function
@@ -9,11 +9,11 @@ const Todo = (props) => {
   const [tasks, setTasks] = useState([""]);
   const [task, setTask] = useState("");
   const [error, setError] = useState("");
-  const [disabled, setDisabled] = useState(true);
-  const [todo, setTodo] = useState("");
-  const [email, setEmail] = useState(props.userEmail);
+  const [disabled] = useState(true);
+  const [todo] = useState("");
+  const [email] = useState(props.userEmail);
   const [dbData, setDbData] = useState(props.dataObj || []);
-  const [newTodoList, setNewTodoList] = useState([]);
+ 
 
   console.log(dbData);
   console.log(props.dataObj);
@@ -33,7 +33,7 @@ const Todo = (props) => {
       return;
     }
     console.log("submit handler 2");
-    fetch("https://app-to-do.herokuapp.com/todo/create", {
+    fetch("http://localhost:8080/todo/create", {
       method: "PUT",
       headers: {
         Authorization: "Bearer " + authToken,
@@ -70,7 +70,7 @@ const Todo = (props) => {
     console.log(e.target.dataset.todo);
 
     // set Todos
-    fetch("https://app-to-do.herokuapp.com/todo/delete", {
+    fetch("http://localhost:8080/todo/delete", {
       method: "PUT",
       headers: {
         Authorization: "Bearer " + authToken,
@@ -140,3 +140,4 @@ const Todo = (props) => {
 };
 
 export default Todo;
+
